@@ -31,7 +31,7 @@ namespace BooksAPI.Controllers
         public async Task<IHttpActionResult> GetBook(Guid id)
         {
             var book = _context.Books.Where(x => x.Id.Equals(id));
-            return Ok(book);
+            return Ok(book); 
         }
 
         [HttpDelete]
